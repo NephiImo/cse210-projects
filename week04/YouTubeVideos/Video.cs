@@ -1,11 +1,11 @@
-class Videos
+class Video
 {
     private string _title;
     private string _author;
     private int _length;
     private List<Comment> _comments;
 
-    public Videos(string title, string author, int length)
+    public Video(string title, string author, int length)
     {
         _title = title;
         _author = author;

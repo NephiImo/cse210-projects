@@ -4,9 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Videos video1 = new Videos("Beta Squad are back!", "Beta Squad", 300);
-        Videos video2 = new Videos("The Sidemen are back!", "Sidemen", 1000);
-        Videos video3 = new Videos("The Dream Team are back!", "Dream Team", 500);
+        Video video1 = new Video("Beta Squad are back!", "Beta Squad", 300);
+        Video video2 = new Video("The Sidemen are back!", "Sidemen", 1000);
+        Video video3 = new Video("The Dream Team are back!", "Dream Team", 500);
 
         // Add comments to video1
         video1.AddComment ( new Comment("John", "This video is amazing!"));
@@ -23,7 +23,7 @@ class Program
         video3.AddComment(new Comment("Sophie", "I love the Dream Team!"));
         video3.AddComment(new Comment("James", "This video is so funny, I literally can't stop laughing!"));
 
-        List<Videos> videosList = new List<Videos> { video1, video2, video3 };
+        List<Video> videosList = new List<Video> { video1, video2, video3 };
 
         foreach (var video in videosList)
         {
