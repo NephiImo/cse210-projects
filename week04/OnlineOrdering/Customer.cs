@@ -12,8 +12,5 @@ public class Customer
     public string GetName() => _name;
     public Address GetAddress() => _address;
 
-    public bool IsInUSA()
-    {
-        return _address.IsInUSA();
-    }
+    public bool IsInUSA() => _address.IsInUSA();
 }

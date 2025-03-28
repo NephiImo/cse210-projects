@@ -14,17 +14,17 @@ public class Order
         _products.Add(product);
     }
 
-    public float GetTotalCost()
+    public double GetTotalCost()
     {
-        float totalCost = 0;
+        double totalCost = 0;
         foreach (var product in _products)
         {
             totalCost += product.GetTotalCost();
         }
 
-        totalCost += _customer.IsInUSA() ? 5 : 35;
+        double shippingCost = _customer.IsInUSA() ? 5 : 35;
 
-        return totalCost;
+        return totalCost + shippingCost;
     }
 
     public string GetPackingLabel()

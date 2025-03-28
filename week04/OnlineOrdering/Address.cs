@@ -13,13 +13,9 @@ public class Address
         _country = country;
     }
 
+    public bool IsInUSA() => _country.ToLower() == "usa";
     public string GetFullAddress()
     {
         return $"{_street}\n{_city}, {_state}\n{_country}";
-    }
-
-    public bool IsInUSA()
-    {
-        return _country.ToLower() == "usa";
     }
 }
